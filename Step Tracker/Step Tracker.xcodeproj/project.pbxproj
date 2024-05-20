@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1876DBEC2BFA8FDA00D68EFF /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876DBEB2BFA8FDA00D68EFF /* Step_TrackerApp.swift */; };
-		1876DBEE2BFA8FDA00D68EFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876DBED2BFA8FDA00D68EFF /* ContentView.swift */; };
+		1876DBEE2BFA8FDA00D68EFF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876DBED2BFA8FDA00D68EFF /* DashboardView.swift */; };
 		1876DBF02BFA8FDA00D68EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1876DBEF2BFA8FDA00D68EFF /* Assets.xcassets */; };
 		1876DBF32BFA8FDA00D68EFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1876DBF22BFA8FDA00D68EFF /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		1876DBE82BFA8FDA00D68EFF /* Step Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1876DBEB2BFA8FDA00D68EFF /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
-		1876DBED2BFA8FDA00D68EFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1876DBED2BFA8FDA00D68EFF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		1876DBEF2BFA8FDA00D68EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1876DBF22BFA8FDA00D68EFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				1876DBEB2BFA8FDA00D68EFF /* Step_TrackerApp.swift */,
-				1876DBED2BFA8FDA00D68EFF /* ContentView.swift */,
+				1876DBED2BFA8FDA00D68EFF /* DashboardView.swift */,
 				1876DBEF2BFA8FDA00D68EFF /* Assets.xcassets */,
 				1876DBF12BFA8FDA00D68EFF /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1876DBEE2BFA8FDA00D68EFF /* ContentView.swift in Sources */,
+				1876DBEE2BFA8FDA00D68EFF /* DashboardView.swift in Sources */,
 				1876DBEC2BFA8FDA00D68EFF /* Step_TrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
