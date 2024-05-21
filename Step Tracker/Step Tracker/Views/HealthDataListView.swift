@@ -44,11 +44,8 @@ struct HealthDataListView: View {
                     TextField("Value", text: $valueToAdd)
                         .multilineTextAlignment(.trailing)
                         .frame(width: 140)
-                        .keyboardType(metric == .steps ? .numberPad : .decimalPad)
-                    
-                    
+                        .keyboardType(metric == .steps ? .numberPad : .decimalPad)  
                 }
-                
             }
             .navigationTitle(metric.title)
             .toolbar {
