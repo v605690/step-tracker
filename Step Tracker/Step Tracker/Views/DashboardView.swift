@@ -66,7 +66,8 @@ struct DashboardView: View {
                             .frame(height: 150)
                     }
                     .padding()
-                    .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
+                    .background(RoundedRectangle(cornerRadius:12)
+                        .fill(Color(.secondarySystemBackground)))
                     
                     VStack(alignment: .leading) {
                             VStack(alignment: .leading) {
@@ -85,13 +86,14 @@ struct DashboardView: View {
                             .frame(height: 240)
                     }
                     .padding()
-                    .background(RoundedRectangle(cornerRadius: 12).fill(Color(.secondarySystemBackground)))
+                    .background(RoundedRectangle(cornerRadius: 12)
+                        .fill(Color(.secondarySystemBackground)))
                 }
             }
             .padding()
             .navigationTitle("Dashboard")
             .navigationDestination(for: HealthMetricContext.self) { metric in
-                Text(metric.title)
+                HealthDataListView(metric: metric)
             }
         }
         .tint(isSteps ? .pink : .indigo)

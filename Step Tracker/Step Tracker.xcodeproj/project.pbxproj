@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182314C92BFCD6700022AC25 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182314C82BFCD6700022AC25 /* HealthDataListView.swift */; };
 		1876DBEC2BFA8FDA00D68EFF /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876DBEB2BFA8FDA00D68EFF /* Step_TrackerApp.swift */; };
 		1876DBEE2BFA8FDA00D68EFF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876DBED2BFA8FDA00D68EFF /* DashboardView.swift */; };
 		1876DBF02BFA8FDA00D68EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1876DBEF2BFA8FDA00D68EFF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182314C82BFCD6700022AC25 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
 		1876DBE82BFA8FDA00D68EFF /* Step Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1876DBEB2BFA8FDA00D68EFF /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
 		1876DBED2BFA8FDA00D68EFF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182314C72BFCD6580022AC25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1876DBED2BFA8FDA00D68EFF /* DashboardView.swift */,
+				182314C82BFCD6700022AC25 /* HealthDataListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1876DBDF2BFA8FDA00D68EFF = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				1876DBEB2BFA8FDA00D68EFF /* Step_TrackerApp.swift */,
-				1876DBED2BFA8FDA00D68EFF /* DashboardView.swift */,
+				182314C72BFCD6580022AC25 /* Views */,
 				1876DBEF2BFA8FDA00D68EFF /* Assets.xcassets */,
 				1876DBF12BFA8FDA00D68EFF /* Preview Content */,
 			);
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182314C92BFCD6700022AC25 /* HealthDataListView.swift in Sources */,
 				1876DBEE2BFA8FDA00D68EFF /* DashboardView.swift in Sources */,
 				1876DBEC2BFA8FDA00D68EFF /* Step_TrackerApp.swift in Sources */,
 			);
