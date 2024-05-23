@@ -57,7 +57,6 @@ struct HealthKitPermissionPrimingView: View {
                 dismiss()
             }
         }
-        
     }
 }
 
