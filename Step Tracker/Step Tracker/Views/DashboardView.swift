@@ -24,7 +24,9 @@ enum HealthMetricContext: CaseIterable, Identifiable {
 }
 
 struct DashboardView: View {
-    
+    // @AppStorage UserDefaults - this is how SwiftUI access user defaults; store lightweight data
+    @AppStorage("hasSeenPermissionPriming") private var hasSeenPermissionPriming = false
+    @State private var isShowingPermissionPrimingSheet = false
     @State private var selectedStat: HealthMetricContext = .steps
     var isSteps: Bool {
         selectedStat == .steps
@@ -70,15 +72,15 @@ struct DashboardView: View {
                         .fill(Color(.secondarySystemBackground)))
                     
                     VStack(alignment: .leading) {
-                            VStack(alignment: .leading) {
-                                Label("Averages", systemImage: "calendar")
-                                    .font(.title3.bold())
-                                    .foregroundStyle(.pink)
-                                
-                                Text("Last 28 days")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
+                        VStack(alignment: .leading) {
+                            Label("Averages", systemImage: "calendar")
+                                .font(.title3.bold())
+                                .foregroundStyle(.pink)
+                            
+                            Text("Last 28 days")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                         .padding(.bottom, 12)
                         
                         RoundedRectangle(cornerRadius: 12)
@@ -91,15 +93,24 @@ struct DashboardView: View {
                 }
             }
             .padding()
+            .onAppear {
+                isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
+            }
             .navigationTitle("Dashboard")
             .navigationDestination(for: HealthMetricContext.self) { metric in
                 HealthDataListView(metric: metric)
             }
         }
+        .sheet(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
+            // Todo: fetch health data
+        }, content: {
+            HealthKitPermissionPrimingView(hasSeenPermissionPriming: $hasSeenPermissionPriming)
+        })
         .tint(isSteps ? .pink : .indigo)
     }
 }
 
 #Preview {
     DashboardView()
+        .environment(HealthKitManager())
 }
